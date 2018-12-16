@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cloudiness</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+        crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+
+</head>
+<style>
+.label{
+background-color:darkturquoise;
+font-size: 50px;
+display: inline-block;
+
+}
+
+.navbar {
+  background-color: darkturquoise;
+  
+}
+@media screen and (min-width: 540px) {
+  .navbar {
+    background-color: pink;
+  }
+}
+
+.nav-link{
+    color:black
+}
+
+h1{
+    color:darkturquoise
+}    
+
+
+</style>
+<body>
+    <nav class="navbar nav-pills head">
+        <div class="container-fluid">
+            <div class="col-xs-12">
+                <a class="label label-lg" href="./index.html">Latitude</a>
+                    <div class ="navbar navbar-right">
+                        <div class="dropdown">
+                            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="true">
+                                Plots
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                <li><a href="./MaxTemperature.html">Max Temperature</a></li>
+                                <li><a href="./Humidity.html">Humidity</a></li>
+                                <li><a href="./Cloudiness.html">Cloudiness</a></li>
+                                <li><a href="./WindSpeed.html">Wind Speed</a></li>
+                             </ul>
+                        
+                            <a class="nav-link" href="./Comparison.html#">Comparison</a>
+                                <span class="c-d">
+                            <a class="nav-link" href="./Data.html">Data</a>
+                                <span class="c-d"> 
+                            </button>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </nav>
+
+            
+
+    <div class="content">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12 col-md-8">
+                    <div class="box">
+                        <div class="page-header">
+                            <h1 style="color:darkturquoise">Cloudiness</h1>
+                        </div>
+                        <br>   
+                        <div class="box">   
+                            <img src="Latitude_Cloudiness.png" alt="Latitude vs. Cloudiness" class="img-responsive"> 
+                            <p>There is no strong relationship between latitude and cloudiness. However, it is interesting to see that a strong band of cities sits at 0, 80, and 100% cloudiness.</p>
+
+                        </div>
+                    </div>    
+                </div>    
+                <div class="col-xs-12 col-md-4">
+                    <div class="box">
+                        <div class="page-header">
+                            <h1 style="color:darkturquoise">Visualizations</h1>
+                        </div>          
+                        <div class="content">    
+                            <a href="./MaxTemperature.html"><img src="Latitude_Temperature.png" alt="Latitude vs. Max Temperature" height="150px" width="150px"></a>
+                            <a href="./Humidity.html"><img src="Latitude_Humidity.png" alt="Latitude vs. Humidity" height="150px" width="150px"></a>
+                            <a href="./Cloudiness.html"><img style="border:5px solid darkturquoise;" src="Latitude_Cloudiness.png" alt="Latitude vs. Cloudiness" height="150px" width="150px"></a>
+                            <a href="./WindSpeed.html"><img src="Latitude_WindSpeed.png" alt="Latitude vs. Wind Speed" height="150px" width="150px"></a>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+        </div>           
+    </div>    
+</body>
+</html>    
